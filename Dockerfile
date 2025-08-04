@@ -1,21 +1,23 @@
-FROM node:20-slim
+FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
   imagemagick \
-  webp \
-  git && \
+  webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
-WORKDIR /root/zokou
+RUN git clone https://github.com/luffy8979/Zokou-MD-english /root/Zokou_BOt
+WORKDIR /root/Zokou_Bot/
+
 
 COPY package.json .
+RUN npm install pm2 -g
 RUN npm install
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 5000
 
-CMD ["npm","start"]
+CMD ["npm", "run" , "web"]
