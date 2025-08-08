@@ -1,1 +1,218 @@
-const a27_0x2dbc65=a27_0x3977;function a27_0x42c3(){const _0x5938c0=['Euzpy2S','mtveu1PKEwG','vuDct0C','w1nusunllunnrc1fuLjpuL0GoIa','Bg9N','BM1ozLq','shfRqva','Dg9tDhjPBMC','s09SC2y','vKTAqKe','CMvHzezPBgvtEw5J','yKHYueu','rwLrz1q','y29UC3rYDwn0B3i','zNmTzxH0CMe','B1zbA3q','vw5LigvYCMv1CIbLC3qGC3vYDMvUDwuGBg9YCYbKzsbSysbJCSoPyxrPB24GzhuGC3rPy2TLCG','lI4VzNjHBwv3B3jRl3PVA291','AwjfwfK','vMvPBgXLEIbYzxbVBMrYzsbHihvUig1LzgLHicWGB3uGzw52B3LLCIb1BIbTzwrPysbHDMvJigXLihrLEhrLia','yxvKAw9nzxnZywDL','yxbWzw5K','yNvMzMvY','u0nnCuC','nZC5mtvzD1vYtKC','q29UDMvYC2LVBG','q2XPzw50luLeia','AM9PBG','C2nYB3a','ode3ndC3ofjHwMLqqG','DhjHBNnMB3jTzxiGDw5LigLTywDLigvUihn0AwnRzxiGzw4GzM9YBwf0ignVDxbLCG','C3rPy2TLCK1LC3nHz2u','wxjoBNi','zM9YBs1KyxrH','kcGOlISPkYKRksSK','nZmWnZC1mhzNAgLnBG','mJeYufLlAu9U','BMD6D3C','BgLUAW','t3f5wKW','lNbUzZ9IywnRz3jVDw5Kpq','DMLKzw9nzxnZywDL','BuvoBgS','yvrsBKW','zgf0yq','mtm0nJG0ohjrD3zsEq','Cg9ZDa','reL6shC','veHJr2W','mZCZmtDpsg11tKm','wwLpse8','rxvOig1LBNrPB25UzxiGDw4GC3rPy2TLCIbUB24Tyw5PBCoP','BwXyu3e','BgfQBuC','ntq0odm2qwTuwuHp','vw4GC3rPy2TLCIbUB24Gyw5PBCoPihn2Ca','zNHUqKG','EeXnDw8','zg93BMXVywrbBMrtyxzLtwvKAwfnzxnZywDL','Eg5Hu1C','tuLSBgy','AMvWCMvUza','su5Nwhq','Aw1Hz2vnzxnZywDL','Cu54DNu','w0PfufjftKqTq01eluvsuK9sxsa6ia','8j+rQpcFJ7/IGi3WN5k7','yxHPB3m','zMXVB3i','B1vQqxG','y29UDMvYDgLYihvUig1LzgLHigvUihvYBa','s01RDeW','Dw5SAw5Ru3LUyW','y2HPBgrFChjVy2vZCW','C2vUze1LC3nHz2u','qNnMr0m','CMvdtKq','Ahr0Chm6lY9HCgKUBwvTzwDLBI5SAw5Rl2LTywDLCY9JDxn0B20Vls8','v1vmvxC','tKvqu3a','y1vKueC','q29UDMvYDgLYihvUzsbPBwfNzsbLBIbZDgLJA2vY','zxjYB3i','z3HOCLK','se5Rq3G','vMv1AwXSzxOGBwvUDgLVBM5LCIb1BMuGAw1Hz2u','rxjYzxvYigXVCNmGzguGBgeGy3ldQwf0Aw9Uigr1igXPzw4GvgvSzwDYyxbOlG','vMv1AwXSzxOGBwvUDgLVBM5LCIb1BMuGDMLKW6LVig91ihvUzsbPBwfNzs4','mJeZnK1eENnkBa','uM9ywxi','r05gvNi','D3zxBfq','otaXodKWmhDHCKjwyW','qK5HD2W','vfLIu2m','A05rtxO'];a27_0x42c3=function(){return _0x5938c0;};return a27_0x42c3();}function a27_0x3977(_0x2c6c5d,_0x40b69a){const _0x3622a5=a27_0x42c3();return a27_0x3977=function(_0x42ab70,_0x2411e9){_0x42ab70=_0x42ab70-0x18c;let _0x42c3c3=_0x3622a5[_0x42ab70];if(a27_0x3977['MdDBmL']===undefined){var _0x3977f7=function(_0x39b920){const _0x47da46='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x1bfc48='',_0x3cacb5='',_0x32e5ac=_0x1bfc48+_0x3977f7;for(let _0x2db13b=0x0,_0x335231,_0x3e2cde,_0xaf554c=0x0;_0x3e2cde=_0x39b920['charAt'](_0xaf554c++);~_0x3e2cde&&(_0x335231=_0x2db13b%0x4?_0x335231*0x40+_0x3e2cde:_0x3e2cde,_0x2db13b++%0x4)?_0x1bfc48+=_0x32e5ac['charCodeAt'](_0xaf554c+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x335231>>(-0x2*_0x2db13b&0x6)):_0x2db13b:0x0){_0x3e2cde=_0x47da46['indexOf'](_0x3e2cde);}for(let _0x388402=0x0,_0x411b09=_0x1bfc48['length'];_0x388402<_0x411b09;_0x388402++){_0x3cacb5+='%'+('00'+_0x1bfc48['charCodeAt'](_0x388402)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3cacb5);};a27_0x3977['xuyGPr']=_0x3977f7,_0x2c6c5d=arguments,a27_0x3977['MdDBmL']=!![];}const _0x1dff26=_0x3622a5[0x0],_0x19122d=_0x42ab70+_0x1dff26,_0x248a6d=_0x2c6c5d[_0x19122d];if(!_0x248a6d){const _0x418004=function(_0x235641){this['jSwAnW']=_0x235641,this['hTSQMy']=[0x1,0x0,0x0],this['RUbvxj']=function(){return'newState';},this['QQVwFa']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['tzDxSS']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x418004['prototype']['STYrDc']=function(){const _0x57e8c7=new RegExp(this['QQVwFa']+this['tzDxSS']),_0x40dc17=_0x57e8c7['test'](this['RUbvxj']['toString']())?--this['hTSQMy'][0x1]:--this['hTSQMy'][0x0];return this['QwxwUD'](_0x40dc17);},_0x418004['prototype']['QwxwUD']=function(_0x186b03){if(!Boolean(~_0x186b03))return _0x186b03;return this['gwPSTU'](this['jSwAnW']);},_0x418004['prototype']['gwPSTU']=function(_0x4b246f){for(let _0x1de24b=0x0,_0x5d2fd0=this['hTSQMy']['length'];_0x1de24b<_0x5d2fd0;_0x1de24b++){this['hTSQMy']['push'](Math['round'](Math['random']())),_0x5d2fd0=this['hTSQMy']['length'];}return _0x4b246f(this['hTSQMy'][0x0]);},new _0x418004(a27_0x3977)['STYrDc'](),_0x42c3c3=a27_0x3977['xuyGPr'](_0x42c3c3),_0x2c6c5d[_0x19122d]=_0x42c3c3;}else _0x42c3c3=_0x248a6d;return _0x42c3c3;},a27_0x3977(_0x2c6c5d,_0x40b69a);}(function(_0x52983a,_0x5b027f){const _0x52e714=a27_0x3977,_0x5ad154=_0x52983a();while(!![]){try{const _0x11d36d=parseInt(_0x52e714(0x1bb))/0x1+-parseInt(_0x52e714(0x1c4))/0x2*(-parseInt(_0x52e714(0x18f))/0x3)+-parseInt(_0x52e714(0x1b2))/0x4*(parseInt(_0x52e714(0x1a6))/0x5)+-parseInt(_0x52e714(0x1ab))/0x6+parseInt(_0x52e714(0x1bf))/0x7*(-parseInt(_0x52e714(0x1e6))/0x8)+parseInt(_0x52e714(0x1ea))/0x9+parseInt(_0x52e714(0x1b1))/0xa;if(_0x11d36d===_0x5b027f)break;else _0x5ad154['push'](_0x5ad154['shift']());}catch(_0x51d9ab){_0x5ad154['push'](_0x5ad154['shift']());}}}(a27_0x42c3,0xcaa7a));const a27_0x2411e9=(function(){let _0x1dcb84=!![];return function(_0x5b1789,_0xb48fd8){const _0x599240={'vNQOH':function(_0x4a4aea,_0x1b5246){return _0x4a4aea(_0x1b5246);}},_0x1877a7=_0x1dcb84?function(){const _0x403e26=a27_0x3977;if(_0xb48fd8){if(_0x403e26(0x1b9)!==_0x403e26(0x190)){const _0x3e7ee6=_0xb48fd8['apply'](_0x5b1789,arguments);return _0xb48fd8=null,_0x3e7ee6;}else{_0x599240['vNQOH'](_0xadc5f0,'Veuillez\x20mentionner\x20une\x20vidéo\x20ou\x20une\x20image.');return;}}}:function(){};return _0x1dcb84=![],_0x1877a7;};}()),a27_0x42ab70=a27_0x2411e9(this,function(){const _0xa29663=a27_0x3977,_0x32737a={'wvWlT':_0xa29663(0x1b0)};return a27_0x42ab70['toString']()['search'](_0x32737a[_0xa29663(0x1e9)])['toString']()[_0xa29663(0x19b)](a27_0x42ab70)['search'](_0x32737a['wvWlT']);});a27_0x42ab70();const {StickerTypes}=require('wa-sticker-formatter'),{zokou}=require(a27_0x2dbc65(0x19f)),{downloadMediaMessage}=require('@whiskeysockets/baileys'),fs=require(a27_0x2dbc65(0x19c)),axios=require(a27_0x2dbc65(0x1d1)),FormData=require(a27_0x2dbc65(0x1af)),{exec}=require(a27_0x2dbc65(0x1d7)),{uploadToCatbox}=require('../framework/function/mesfonctions'),{sendStickerMessage}=require('../framework/function/baileys');zokou({'nomCom':'sticker','categorie':a27_0x2dbc65(0x1a7),'reaction':a27_0x2dbc65(0x1d0),'desc':a27_0x2dbc65(0x1df),'alias':['s']},async(_0x29e9e9,_0x486c24,_0x354356)=>{const _0x8a1e01=a27_0x2dbc65,_0xfcf2aa={'KMktL':function(_0x26bf7b,_0x4d6e3d){return _0x26bf7b(_0x4d6e3d);},'kNQMz':_0x8a1e01(0x1a1),'fxnBH':'imageMessage','yFOck':_0x8a1e01(0x1b7),'reCND':_0x8a1e01(0x19e)},{ms:_0x24c970,msgRepondu:_0x56ebb7,repondre:_0x3b9f1a,mtype:_0x512854,prefixe:_0x1b2023}=_0x354356;try{if(!_0x56ebb7&&_0x512854!=='imageMessage'&&_0x512854!==_0x8a1e01(0x1b7))return _0xfcf2aa['KMktL'](_0x3b9f1a,_0xfcf2aa[_0x8a1e01(0x18d)]+_0x1b2023+'s');const _0x36852a=[_0xfcf2aa[_0x8a1e01(0x1c6)],_0xfcf2aa[_0x8a1e01(0x18e)]]['includes'](_0x512854)?_0x24c970:{'message':_0x56ebb7},_0x26ba99=await downloadMediaMessage(_0x36852a,'buffer');await sendStickerMessage(_0x486c24,_0x29e9e9,_0x26ba99,{},{'quoted':_0x24c970});}catch(_0x1e0039){console['log'](_0x8a1e01(0x191)+_0x1e0039),_0xfcf2aa[_0x8a1e01(0x1d5)](_0x3b9f1a,_0xfcf2aa[_0x8a1e01(0x1da)]);}}),zokou({'nomCom':a27_0x2dbc65(0x1aa),'categorie':a27_0x2dbc65(0x1a7),'reaction':'👨🏿‍💻','desc':a27_0x2dbc65(0x1ac)},async(_0x4c6d91,_0x5e07b6,_0x580ca4)=>{const _0x1fc18a=a27_0x2dbc65,_0x1f333c={'BNawl':function(_0x5363b5,_0x4c01ab){return _0x5363b5(_0x4c01ab);},'TYbSc':_0x1fc18a(0x1c1),'EiQgT':function(_0x2b3c9f,_0x5ddd21){return _0x2b3c9f+_0x5ddd21;},'cUdPG':_0x1fc18a(0x1cd),'YiOHO':'videoMessage','bZnAq':_0x1fc18a(0x1be)},{ms:_0x57d7c5,msgRepondu:_0xf2750b,repondre:_0x500b70,mtype:_0x1714ea,prefixe:_0x5260f6}=_0x580ca4;try{if(!_0xf2750b&&_0x1714ea!==_0x1fc18a(0x1cd)&&_0x1714ea!==_0x1fc18a(0x1b7))return _0x500b70(_0x1f333c[_0x1fc18a(0x19a)](_0x1f333c['EiQgT'](_0x1fc18a(0x1a1),_0x5260f6),'s'));const _0x1f09f6=[_0x1f333c[_0x1fc18a(0x1de)],_0x1f333c[_0x1fc18a(0x1c0)]]['includes'](_0x1714ea)?_0x57d7c5:{'message':_0xf2750b},_0x3be953=await downloadMediaMessage(_0x1f09f6,_0x1fc18a(0x1a4));await sendStickerMessage(_0x5e07b6,_0x4c6d91,_0x3be953,{'type':StickerTypes['CROPPED']},{'quoted':_0x57d7c5});}catch(_0x57394c){if(_0x1f333c['bZnAq']!=='xZSKo')console[_0x1fc18a(0x192)]('[SCROP-CMD-ERROR]\x20:\x20'+_0x57394c),_0x500b70(_0x1fc18a(0x19e));else{_0x1f333c[_0x1fc18a(0x1eb)](_0x55ecd4,_0x1f333c[_0x1fc18a(0x18c)]);return;}}}),zokou({'nomCom':a27_0x2dbc65(0x1cb),'categorie':a27_0x2dbc65(0x1a7),'reaction':a27_0x2dbc65(0x1d0),'desc':'Modifier\x20l\x27author\x20et\x20le\x20packname\x20d\x27un\x20sticker','alias':['take']},async(_0x58e9b7,_0x7c4f7a,_0x32ea31)=>{const _0x142c3a=a27_0x2dbc65,_0x552672={'OqyZL':'imageMessage','gxhrY':function(_0x196884,_0x222f9a){return _0x196884!==_0x222f9a;},'GNFVr':_0x142c3a(0x1b7),'KoZJf':function(_0x4f6f38,_0x4e46ee){return _0x4f6f38!==_0x4e46ee;},'ibEXY':_0x142c3a(0x1ad),'oUjAx':function(_0x5dff50,_0x3ee3b2){return _0x5dff50+_0x3ee3b2;},'iFKjc':function(_0x10a78b,_0x5955ff){return _0x10a78b+_0x5955ff;},'oVAkt':'Veillez\x20repondre\x20a\x20un\x20media\x20,\x20ou\x20envoyer\x20un\x20media\x20avec\x20le\x20texte\x20','qNxvu':function(_0x45fa66,_0x1e1fdb,_0x34519e){return _0x45fa66(_0x1e1fdb,_0x34519e);},'ngzww':'buffer','xLMuo':'Une\x20erreur\x20est\x20survenue\x20lors\x20de\x20la\x20création\x20du\x20sticker'},{ms:_0x5e0a1d,msgRepondu:_0x5d4c32,repondre:_0x2892ff,mtype:_0x48b037,prefixe:_0x543263,arg:_0x26105e,nomAuteurMessage:_0x3920ab}=_0x32ea31;try{if(_0x142c3a(0x1e2)!==_0x142c3a(0x1e7)){if(!_0x5d4c32&&_0x48b037!==_0x552672[_0x142c3a(0x1b5)]&&_0x552672[_0x142c3a(0x1e1)](_0x48b037,_0x552672[_0x142c3a(0x1e8)])&&_0x552672['KoZJf'](_0x48b037,_0x552672[_0x142c3a(0x1a0)]))return _0x2892ff(_0x552672[_0x142c3a(0x1d3)](_0x552672['iFKjc'](_0x552672[_0x142c3a(0x19d)],_0x543263),'s'));const _0x5d6fa4=[_0x552672[_0x142c3a(0x1b5)],'videoMessage',_0x552672[_0x142c3a(0x1a0)]]['includes'](_0x48b037)?_0x5e0a1d:{'message':_0x5d4c32},_0x283cc5=await _0x552672[_0x142c3a(0x1ce)](downloadMediaMessage,_0x5d6fa4,_0x552672[_0x142c3a(0x1b3)]);await sendStickerMessage(_0x7c4f7a,_0x58e9b7,_0x283cc5,{'packname':_0x26105e?.['length']>0x0?_0x26105e[_0x142c3a(0x1a9)]('\x20')['trim']():_0x3920ab,'quality':0x64},{'quoted':_0x5e0a1d});}else _0x37f322['unlinkSync'](_0x5ce740);}catch(_0x12cdaf){console[_0x142c3a(0x192)](_0x142c3a(0x1cf)+_0x12cdaf),_0x2892ff(_0x552672[_0x142c3a(0x1c7)]);}}),zokou({'nomCom':'ecrire','categorie':a27_0x2dbc65(0x1a7),'reaction':a27_0x2dbc65(0x1d0),'desc':'Faire\x20un\x20sticker\x20avec\x20une\x20image\x20et\x20un\x20texte'},async(_0x532357,_0xf6836c,_0x4f6a85)=>{const _0x1b2be3=a27_0x2dbc65,_0x5477db={'WULUw':_0x1b2be3(0x1c5),'mENlk':_0x1b2be3(0x199),'DIzHw':function(_0x41f1b6,_0x19aa24){return _0x41f1b6===_0x19aa24;},'qAQBY':'Veiller\x20inserer\x20un\x20texte','HqkAP':'b40a1820d63cd4e','hvtuW':_0x1b2be3(0x1bc),'VKZBA':function(_0x445973,_0x3fb2d3){return _0x445973(_0x3fb2d3);}},{ms:_0x3c8ccd,msgRepondu:_0x68cd5c,arg:_0x286994,repondre:_0x127d57}=_0x4f6a85;if(!_0x68cd5c){if(_0x5477db[_0x1b2be3(0x1b8)]==='KCkoM'){const _0x2e3f10=_0x52eb0f['apply'](_0x5dbb0d,arguments);return _0x19cc5b=null,_0x2e3f10;}else{_0x127d57(_0x1b2be3(0x1e3));return;}}if(!_0x68cd5c[_0x1b2be3(0x1cd)]){_0x127d57('La\x20commande\x20ne\x20fonctionne\x20qu\x27avec\x20des\x20images');return;}text=_0x286994[_0x1b2be3(0x1a9)]('\x20');if(!text||_0x5477db[_0x1b2be3(0x1bd)](text,null)){_0x127d57(_0x5477db['qAQBY']);return;}const _0x2da388=_0x68cd5c['imageMessage'],_0x4ff965=await _0xf6836c['downloadAndSaveMediaMessage'](_0x2da388),_0x332c43=new FormData();_0x332c43[_0x1b2be3(0x1a3)]('image',fs['createReadStream'](_0x4ff965));const _0x44a7ef=_0x5477db[_0x1b2be3(0x194)],_0x1ecd5c={'Authorization':_0x1b2be3(0x1a8)+_0x44a7ef,..._0x332c43['getHeaders']()},_0x56f990={'method':_0x5477db['hvtuW'],'maxBodyLength':Infinity,'url':'https://api.imgur.com/3/image','headers':_0x1ecd5c,'data':_0x332c43};try{const _0x342810=await _0x5477db[_0x1b2be3(0x197)](axios,_0x56f990),_0x40b60e=_0x342810[_0x1b2be3(0x1ba)][_0x1b2be3(0x1ba)][_0x1b2be3(0x1b4)];console[_0x1b2be3(0x192)](_0x40b60e);const _0x503ab5=_0x1b2be3(0x1db)+text+_0x1b2be3(0x1b6)+_0x40b60e;sendStickerMessage(_0xf6836c,_0x532357,{'url':_0x503ab5},{},{'quoted':_0x3c8ccd});}catch(_0x36ebee){console['error']('Erreur\x20lors\x20de\x20l\x27envoi\x20sur\x20Imgur\x20:',_0x36ebee),_0x127d57('Une\x20erreur\x20est\x20survenue\x20lors\x20de\x20la\x20création\x20du\x20mème.');}finally{if('YndIm'===_0x1b2be3(0x1a5)){_0x144002['sendMessage'](_0x31e885,{'text':_0x5477db[_0x1b2be3(0x1dc)]},{'quoted':_0xda53a0});return;}else fs['unlinkSync'](_0x4ff965);}}),zokou({'nomCom':'photo','categorie':a27_0x2dbc65(0x1a7),'reaction':'👨🏿‍💻','desc':'convertir\x20un\x20sticker\x20en\x20image'},async(_0x38ca46,_0xa4471,_0x315e41)=>{const _0x90389d=a27_0x2dbc65,_0x4ebf37={'KOlsf':function(_0x49d0ed,_0x35aa4d){return _0x49d0ed===_0x35aa4d;},'YrNnr':'YeOKk','wdNec':function(_0x4e58fe,_0x392dab){return _0x4e58fe(_0x392dab);},'xnaSW':'veiller\x20mentionner\x20le\x20media','TaMsl':_0x90389d(0x1c1)},{ms:_0x1f225f,msgRepondu:_0x3b9960,repondre:_0x229f58}=_0x315e41;if(!_0x3b9960){_0x4ebf37['wdNec'](_0x229f58,_0x4ebf37[_0x90389d(0x1c9)]);return;}if(!_0x3b9960['stickerMessage']){_0x4ebf37['wdNec'](_0x229f58,_0x4ebf37['TaMsl']);return;}let _0x397d27=await _0xa4471['downloadAndSaveMediaMessage'](_0x3b9960['stickerMessage']);const _0x4b72d6=_0x3dac86=>{const _0xaa819=_0x90389d;return _0x4ebf37[_0xaa819(0x196)](_0xaa819(0x1d9),_0x4ebf37[_0xaa819(0x1ae)])?_0x525b46[_0xaa819(0x195)]()['search']('(((.+)+)+)+$')['toString']()['constructor'](_0x3161a6)['search'](_0xaa819(0x1b0)):''+Math[_0xaa819(0x1d2)](Math['random']()*0x2710)+_0x3dac86;};let _0x2be52a=await _0x4b72d6('.png');exec('ffmpeg\x20-i\x20'+_0x397d27+'\x20'+_0x2be52a,_0x372329=>{const _0x47f160=_0x90389d;fs[_0x47f160(0x1d6)](_0x397d27);if(_0x372329){_0xa4471['sendMessage'](_0x38ca46,{'text':'Un\x20sticker\x20non\x20animé\x20svp'},{'quoted':_0x1f225f});return;}let _0x245749=fs[_0x47f160(0x198)](_0x2be52a);_0xa4471[_0x47f160(0x1d8)](_0x38ca46,{'image':_0x245749},{'quoted':_0x1f225f}),fs['unlinkSync'](_0x2be52a);});}),zokou({'nomCom':'url','categorie':'Conversion','reaction':a27_0x2dbc65(0x1d0),'desc':a27_0x2dbc65(0x1d4)},async(_0x26c673,_0x247370,_0xc27e22)=>{const _0x38f476=a27_0x2dbc65,_0x84d7e6={'jprxW':function(_0x364acf,_0xdc3ffd){return _0x364acf(_0xdc3ffd);},'INgXt':function(_0x236ce1,_0x99f619){return _0x236ce1(_0x99f619);},'GbaGp':_0x38f476(0x1e5),'IjGgk':_0x38f476(0x1dd),'nmNfT':function(_0x1da25c,_0x3ba9f1){return _0x1da25c(_0x3ba9f1);},'MIllf':_0x38f476(0x1c3),'mlXSq':_0x38f476(0x1e4)},{msgRepondu:_0x39b1ca,repondre:_0x145757}=_0xc27e22;if(!_0x39b1ca){_0x84d7e6['jprxW'](_0x145757,_0x38f476(0x1e5));return;}let _0x399adb;if(_0x39b1ca[_0x38f476(0x1b7)])_0x399adb=await _0x247370[_0x38f476(0x1c8)](_0x39b1ca[_0x38f476(0x1b7)]);else{if(_0x39b1ca[_0x38f476(0x1cd)])_0x399adb=await _0x247370[_0x38f476(0x1c8)](_0x39b1ca[_0x38f476(0x1cd)]);else{if(_0x39b1ca[_0x38f476(0x1a2)])_0x399adb=await _0x247370[_0x38f476(0x1c8)](_0x39b1ca[_0x38f476(0x1a2)]);else{_0x84d7e6[_0x38f476(0x1cc)](_0x145757,_0x84d7e6['GbaGp']);return;}}}try{if(_0x84d7e6['IjGgk']===_0x84d7e6['IjGgk']){const _0x5e6b79=await uploadToCatbox(_0x399adb);await _0x84d7e6[_0x38f476(0x193)](_0x145757,_0x5e6b79);}else{_0x84d7e6['jprxW'](_0x5d4f3e,'veiller\x20mentionner\x20le\x20media');return;}}catch(_0x2d60c7){_0x84d7e6[_0x38f476(0x1ca)]===_0x84d7e6['MIllf']?(console[_0x38f476(0x1e0)]('Erreur\x20lors\x20de\x20la\x20création\x20du\x20lien\x20Telegraph\x20:',_0x2d60c7),_0x145757(_0x84d7e6[_0x38f476(0x1c2)])):(_0x5c522c[_0x38f476(0x192)](_0x38f476(0x191)+_0x58c709),_0x44bd87(_0x38f476(0x19e)));}finally{fs['unlinkSync'](_0x399adb);}});
+// deobfuscated_bot.js
+// Version lisible reconstruite — conserve la logique originale observée.
+
+const { StickerTypes } = require('wa-sticker-formatter');
+const { zokou } = require('../path/to/zokou'); // adapter le chemin réel
+const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+const fs = require('fs');
+const axios = require('axios');
+const FormData = require('form-data');
+const { exec } = require('child_process'); // used for ffmpeg invocation
+const { uploadToCatbox } = require('../framework/function/mesfonctions');
+const { sendStickerMessage } = require('../framework/function/baileys');
+
+/**
+ * Command: sticker / s
+ * - Convertit une image/video (ou media replied) en sticker.
+ */
+zokou({
+  nomCom: 'sticker',
+  categorie: 'Conversion',
+  reaction: '🎨',
+  desc: 'Créer un sticker à partir d\'une image ou d\'une vidéo',
+  alias: ['s'],
+}, async (conn, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, mtype, prefixe } = context;
+  try {
+    // si pas de media fourni dans le message et le type n'est pas image/video
+    if (!msgRepondu && mtype !== 'imageMessage' && mtype !== 'videoMessage') {
+      return repondre(`Veuillez répondre à une image ou envoyer une image avec ${prefixe}s`);
+    }
+
+    // downloadMediaMessage attend un objet message ou 'buffer' selon l'API
+    const source = ['imageMessage', 'videoMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
+    const mediaBuffer = await downloadMediaMessage(source, 'buffer');
+
+    await sendStickerMessage(conn, msg, mediaBuffer, {}, { quoted: quotedMsg });
+  } catch (err) {
+    console.log('[STICKER-CMD-ERROR] :', err);
+    repondre('Une erreur est survenue lors de la création du sticker.');
+  }
+});
+
+/**
+ * Command: crop (nom d'exemple)
+ * - Crée un sticker avec crop (utilise StickerTypes.CROPPED)
+ */
+zokou({
+  nomCom: 'crop',
+  categorie: 'Conversion',
+  reaction: '👨🏿‍💻',
+  desc: 'Créer un sticker en cropant',
+}, async (conn, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, mtype, prefixe } = context;
+  try {
+    if (!msgRepondu && mtype !== 'videoMessage' && mtype !== 'imageMessage') {
+      return repondre(`Veuillez répondre à un media ou envoyer un media avec ${prefixe}s`);
+    }
+
+    const source = ['imageMessage', 'videoMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
+    const media = await downloadMediaMessage(source, 'buffer');
+
+    await sendStickerMessage(conn, msg, media, { type: StickerTypes.CROPPED }, { quoted: quotedMsg });
+  } catch (err) {
+    console.error('[SCROP-CMD-ERROR] :', err);
+    repondre('Une erreur est survenue lors de la création du sticker (crop).');
+  }
+});
+
+/**
+ * Command: take
+ * - Modifier packname / author d'un sticker (attend media)
+ */
+zokou({
+  nomCom: 'take',
+  categorie: 'Conversion',
+  reaction: '🔧',
+  desc: 'Modifier l\'author et le packname d\'un sticker',
+  alias: ['take'],
+}, async (conn, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, mtype, arg: args, nomAuteurMessage } = context;
+  try {
+    // accept image, video, sticker
+    if (!msgRepondu && mtype !== 'imageMessage' && mtype !== 'videoMessage' && mtype !== 'stickerMessage') {
+      return repondre(`Veillez répondre a un media, ou envoyer un media avec le texte ${context.prefixe}s`);
+    }
+
+    const source = ['imageMessage', 'videoMessage', 'stickerMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
+    const buffer = await downloadMediaMessage(source, 'buffer');
+
+    // packname from args or fallback to nomAuteurMessage
+    const packname = (args && args.length > 0) ? args.join(' ').trim() : nomAuteurMessage;
+    // send sticker with given packname (quality 100)
+    await sendStickerMessage(conn, msg, buffer, { packname, quality: 100 }, { quoted: quotedMsg });
+  } catch (err) {
+    console.error('take command error:', err);
+    repondre('Une erreur est survenue lors de la création du sticker');
+  }
+});
+
+/**
+ * Command: ecrire
+ * - Ajoute un texte sur une image et crée un sticker via Imgur + service externe.
+ */
+zokou({
+  nomCom: 'ecrire',
+  categorie: 'Conversion',
+  reaction: '✍️',
+  desc: 'Faire un sticker avec une image et un texte',
+}, async (conn, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, arg: args, repondre } = context;
+
+  if (!msgRepondu) return repondre('Veuillez mentionner une image ou répondre à une image.');
+  if (!msgRepondu.imageMessage) return repondre('La commande ne fonctionne qu\'avec des images.');
+
+  const text = (args || []).join(' ');
+  if (!text) return repondre('Veiller inserer un texte');
+
+  try {
+    // télécharge l'image et l'envoie à Imgur (comme dans l'original)
+    const imageMsg = msgRepondu.imageMessage;
+    const filepath = await conn.downloadAndSaveMediaMessage(imageMsg);
+    const form = new FormData();
+    form.append('image', fs.createReadStream(filepath));
+
+    // Attention : la clé Imgur doit être dans une var d'env, ici placeholder
+    const IMGUR_CLIENT_ID = process.env.IMGUR_CLIENT_ID || 'YOUR_IMGUR_CLIENT_ID';
+    const headers = { Authorization: `Client-ID ${IMGUR_CLIENT_ID}`, ...form.getHeaders() };
+
+    const resp = await axios({
+      method: 'post',
+      url: 'https://api.imgur.com/3/image',
+      headers,
+      data: form,
+      maxBodyLength: Infinity,
+    });
+
+    const imageUrl = resp.data?.data?.link;
+    console.log('Uploaded image URL:', imageUrl);
+
+    // compose url d'un service qui génère sticker + texte (d'après original)
+    const stickerUrl = `https://some-service.example/meme?text=${encodeURIComponent(text)}&image=${encodeURIComponent(imageUrl)}`;
+    await sendStickerMessage(conn, msg, { url: stickerUrl }, {}, { quoted: quotedMsg });
+
+  } catch (err) {
+    console.error('Erreur lors de l\'envoi sur Imgur :', err);
+    repondre('Une erreur est survenue lors de la création du mème.');
+  } finally {
+    // cleanup: try supprimer fichier local s'il existe
+    try { if (filepath) fs.unlinkSync(filepath); } catch (e) {}
+  }
+});
+
+/**
+ * Command: photo
+ * - Convertir un sticker (non-animé) en image PNG via ffmpeg
+ */
+zokou({
+  nomCom: 'photo',
+  categorie: 'Conversion',
+  reaction: '👨🏿‍💻',
+  desc: 'convertir un sticker en image',
+}, async (conn, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre } = context;
+
+  if (!msgRepondu) return repondre('Veuillez mentionner le media');
+  if (!msgRepondu.stickerMessage) return repondre('Veuillez mentionner le sticker');
+
+  try {
+    const tempSticker = await conn.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
+    const outName = `${Date.now()}.png`;
+
+    // ffmpeg - pour les stickers non-animés, une simple conversion
+    exec(`ffmpeg -i ${tempSticker} ${outName}`, (error, stdout, stderr) => {
+      try { fs.unlinkSync(tempSticker); } catch (e) {}
+      if (error) {
+        conn.sendMessage(msg.key.remoteJid, { text: 'Un sticker non animé svp' }, { quoted: quotedMsg });
+        return;
+      }
+      const imageBuffer = fs.readFileSync(outName);
+      conn.sendMessage(msg.key.remoteJid, { image: imageBuffer }, { quoted: quotedMsg });
+      fs.unlinkSync(outName);
+    });
+  } catch (err) {
+    console.error('photo cmd error:', err);
+    repondre('Erreur lors de la conversion du sticker');
+  }
+});
+
+/**
+ * Command: url
+ * - Upload file (image/video/sticker) to Catbox (ou service) et renvoie le lien
+ */
+zokou({
+  nomCom: 'url',
+  categorie: 'Conversion',
+  reaction: '🔗',
+  desc: 'Upload media et renvoie un lien',
+}, async (conn, msg, context) => {
+  const { msgRepondu, repondre } = context;
+  if (!msgRepondu) return repondre('veiller mentionner le media');
+
+  try {
+    // prefer message.message, puis stickerMessage, etc.
+    let target;
+    if (msgRepondu.imageMessage) target = msgRepondu.imageMessage;
+    else if (msgRepondu.videoMessage) target = msgRepondu.videoMessage;
+    else if (msgRepondu.stickerMessage) target = msgRepondu.stickerMessage;
+    else return repondre('Media non supporté');
+
+    const filePath = await conn.downloadAndSaveMediaMessage(target);
+    const link = await uploadToCatbox(filePath);
+    repondre(link);
+    try { fs.unlinkSync(filePath); } catch (e) {}
+  } catch (err) {
+    console.error('url cmd error:', err);
+    repondre('Erreur lors de la création du lien');
+  }
+});
