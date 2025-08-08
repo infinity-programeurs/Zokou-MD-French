@@ -1,218 +1,223 @@
-// deobfuscated_bot.js
-// Version lisible reconstruite — conserve la logique originale observée.
-
 const { StickerTypes } = require('wa-sticker-formatter');
-const { zokou } = require('../path/to/zokou'); // adapter le chemin réel
 const { downloadMediaMessage } = require('@whiskeysockets/baileys');
 const fs = require('fs');
+const path = require('path');
 const axios = require('axios');
 const FormData = require('form-data');
-const { exec } = require('child_process'); // used for ffmpeg invocation
+const sharp = require('sharp');
 const { uploadToCatbox } = require('../framework/function/mesfonctions');
 const { sendStickerMessage } = require('../framework/function/baileys');
 
-/**
- * Command: sticker / s
- * - Convertit une image/video (ou media replied) en sticker.
- */
+// Fonction utilitaire pour nettoyer les fichiers temporaires
+async function withTempFile(filePath, callback) {
+  try {
+    return await callback(filePath);
+  } finally {
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+  }
+}
+
+// Commande sticker de base
 zokou({
   nomCom: 'sticker',
   categorie: 'Conversion',
   reaction: '🎨',
-  desc: 'Créer un sticker à partir d\'une image ou d\'une vidéo',
-  alias: ['s'],
-}, async (conn, msg, context) => {
-  const { ms: quotedMsg, msgRepondu, repondre, mtype, prefixe } = context;
+  desc: 'Convertir une image/vidéo en sticker',
+  alias: ['s']
+}, async (dest, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, mtype } = context;
+
   try {
-    // si pas de media fourni dans le message et le type n'est pas image/video
-    if (!msgRepondu && mtype !== 'imageMessage' && mtype !== 'videoMessage') {
-      return repondre(`Veuillez répondre à une image ou envoyer une image avec ${prefixe}s`);
+    if (!msgRepondu && !['imageMessage', 'videoMessage'].includes(mtype)) {
+      return repondre('Répondez à une image/vidéo ou envoyez-en une avec la commande');
     }
 
-    // downloadMediaMessage attend un objet message ou 'buffer' selon l'API
-    const source = ['imageMessage', 'videoMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
-    const mediaBuffer = await downloadMediaMessage(source, 'buffer');
+    const media = msgRepondu ? { message: msgRepondu } : quotedMsg;
+    const buffer = await downloadMediaMessage(media, 'buffer');
 
-    await sendStickerMessage(conn, msg, mediaBuffer, {}, { quoted: quotedMsg });
-  } catch (err) {
-    console.log('[STICKER-CMD-ERROR] :', err);
-    repondre('Une erreur est survenue lors de la création du sticker.');
-  }
-});
-
-/**
- * Command: crop (nom d'exemple)
- * - Crée un sticker avec crop (utilise StickerTypes.CROPPED)
- */
-zokou({
-  nomCom: 'crop',
-  categorie: 'Conversion',
-  reaction: '👨🏿‍💻',
-  desc: 'Créer un sticker en cropant',
-}, async (conn, msg, context) => {
-  const { ms: quotedMsg, msgRepondu, repondre, mtype, prefixe } = context;
-  try {
-    if (!msgRepondu && mtype !== 'videoMessage' && mtype !== 'imageMessage') {
-      return repondre(`Veuillez répondre à un media ou envoyer un media avec ${prefixe}s`);
-    }
-
-    const source = ['imageMessage', 'videoMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
-    const media = await downloadMediaMessage(source, 'buffer');
-
-    await sendStickerMessage(conn, msg, media, { type: StickerTypes.CROPPED }, { quoted: quotedMsg });
-  } catch (err) {
-    console.error('[SCROP-CMD-ERROR] :', err);
-    repondre('Une erreur est survenue lors de la création du sticker (crop).');
-  }
-});
-
-/**
- * Command: take
- * - Modifier packname / author d'un sticker (attend media)
- */
-zokou({
-  nomCom: 'take',
-  categorie: 'Conversion',
-  reaction: '🔧',
-  desc: 'Modifier l\'author et le packname d\'un sticker',
-  alias: ['take'],
-}, async (conn, msg, context) => {
-  const { ms: quotedMsg, msgRepondu, repondre, mtype, arg: args, nomAuteurMessage } = context;
-  try {
-    // accept image, video, sticker
-    if (!msgRepondu && mtype !== 'imageMessage' && mtype !== 'videoMessage' && mtype !== 'stickerMessage') {
-      return repondre(`Veillez répondre a un media, ou envoyer un media avec le texte ${context.prefixe}s`);
-    }
-
-    const source = ['imageMessage', 'videoMessage', 'stickerMessage'].includes(mtype) ? quotedMsg : { message: msgRepondu };
-    const buffer = await downloadMediaMessage(source, 'buffer');
-
-    // packname from args or fallback to nomAuteurMessage
-    const packname = (args && args.length > 0) ? args.join(' ').trim() : nomAuteurMessage;
-    // send sticker with given packname (quality 100)
-    await sendStickerMessage(conn, msg, buffer, { packname, quality: 100 }, { quoted: quotedMsg });
-  } catch (err) {
-    console.error('take command error:', err);
+    await sendStickerMessage(dest, msg, buffer, {}, { quoted: quotedMsg });
+  } catch (error) {
+    console.error('[STICKER ERROR]:', error);
     repondre('Une erreur est survenue lors de la création du sticker');
   }
 });
 
-/**
- * Command: ecrire
- * - Ajoute un texte sur une image et crée un sticker via Imgur + service externe.
- */
+// Commande pour sticker recadré
+zokou({
+  nomCom: 'scrop',
+  categorie: 'Conversion',
+  reaction: '✂️',
+  desc: 'Créer un sticker recadré'
+}, async (dest, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, mtype } = context;
+
+  try {
+    if (!msgRepondu && !['imageMessage', 'videoMessage'].includes(mtype)) {
+      return repondre('Répondez à une image/vidéo ou envoyez-en une avec la commande');
+    }
+
+    const media = msgRepondu ? { message: msgRepondu } : quotedMsg;
+    const buffer = await downloadMediaMessage(media, 'buffer');
+
+    await sendStickerMessage(dest, msg, buffer, { 
+      type: StickerTypes.CROPPED 
+    }, { quoted: quotedMsg });
+  } catch (error) {
+    console.error('[SCROP ERROR]:', error);
+    repondre('Erreur lors de la création du sticker recadré');
+  }
+});
+
+// Commande pour personnaliser les métadonnées du sticker
+zokou({
+  nomCom: 'take',
+  categorie: 'Conversion',
+  reaction: '🏷️',
+  desc: 'Modifier le packname et l\'auteur du sticker',
+  alias: ['steal']
+}, async (dest, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, arg, nomAuteurMessage } = context;
+
+  try {
+    if (!msgRepondu && !['imageMessage', 'videoMessage', 'stickerMessage'].includes(mtype)) {
+      return repondre('Répondez à un média avec la commande');
+    }
+
+    const media = msgRepondu ? { message: msgRepondu } : quotedMsg;
+    const buffer = await downloadMediaMessage(media, 'buffer');
+    const packname = arg?.length > 0 ? arg.join(' ').trim() : nomAuteurMessage;
+
+    await sendStickerMessage(dest, msg, buffer, {
+      packname,
+      quality: 100
+    }, { quoted: quotedMsg });
+  } catch (error) {
+    console.error('[TAKE ERROR]:', error);
+    repondre('Erreur lors de la modification du sticker');
+  }
+});
+
+// Commande pour créer un sticker avec texte
 zokou({
   nomCom: 'ecrire',
   categorie: 'Conversion',
   reaction: '✍️',
-  desc: 'Faire un sticker avec une image et un texte',
-}, async (conn, msg, context) => {
-  const { ms: quotedMsg, msgRepondu, arg: args, repondre } = context;
-
-  if (!msgRepondu) return repondre('Veuillez mentionner une image ou répondre à une image.');
-  if (!msgRepondu.imageMessage) return repondre('La commande ne fonctionne qu\'avec des images.');
-
-  const text = (args || []).join(' ');
-  if (!text) return repondre('Veiller inserer un texte');
+  desc: 'Créer un sticker avec texte sur image'
+}, async (dest, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre, arg } = context;
 
   try {
-    // télécharge l'image et l'envoie à Imgur (comme dans l'original)
-    const imageMsg = msgRepondu.imageMessage;
-    const filepath = await conn.downloadAndSaveMediaMessage(imageMsg);
-    const form = new FormData();
-    form.append('image', fs.createReadStream(filepath));
+    if (!msgRepondu || !msgRepondu.imageMessage) {
+      return repondre('Répondez à une image avec la commande');
+    }
 
-    // Attention : la clé Imgur doit être dans une var d'env, ici placeholder
-    const IMGUR_CLIENT_ID = process.env.IMGUR_CLIENT_ID || 'YOUR_IMGUR_CLIENT_ID';
-    const headers = { Authorization: `Client-ID ${IMGUR_CLIENT_ID}`, ...form.getHeaders() };
+    if (!arg || arg.length === 0) {
+      return repondre('Veuillez ajouter du texte');
+    }
 
-    const resp = await axios({
-      method: 'post',
-      url: 'https://api.imgur.com/3/image',
-      headers,
-      data: form,
-      maxBodyLength: Infinity,
+    const text = arg.join(' ');
+    const tempFile = path.join(__dirname, 'temp_img.jpg');
+
+    await withTempFile(tempFile, async () => {
+      await quotedMsg.downloadAndSaveMediaMessage(msgRepondu.imageMessage, tempFile);
+      
+      // Utilisation de sharp pour optimiser la mémoire
+      const processedImage = await sharp(tempFile)
+        .resize(512, 512, { fit: 'inside' })
+        .toBuffer();
+
+      const form = new FormData();
+      form.append('image', processedImage, { filename: 'image.jpg' });
+
+      const response = await axios.post('https://api.imgur.com/3/image', form, {
+        headers: {
+          ...form.getHeaders(),
+          'Authorization': `Client-ID b40a1820d63cd4e`
+        },
+        maxBodyLength: 10 * 1024 * 1024 // 10MB max
+      });
+
+      const imageUrl = response.data.data.link;
+      const memeUrl = `https://api.memegen.link/images/custom/_/${encodeURIComponent(text)}.png?background=${imageUrl}`;
+
+      await sendStickerMessage(dest, msg, { url: memeUrl }, {}, { quoted: quotedMsg });
     });
-
-    const imageUrl = resp.data?.data?.link;
-    console.log('Uploaded image URL:', imageUrl);
-
-    // compose url d'un service qui génère sticker + texte (d'après original)
-    const stickerUrl = `https://some-service.example/meme?text=${encodeURIComponent(text)}&image=${encodeURIComponent(imageUrl)}`;
-    await sendStickerMessage(conn, msg, { url: stickerUrl }, {}, { quoted: quotedMsg });
-
-  } catch (err) {
-    console.error('Erreur lors de l\'envoi sur Imgur :', err);
-    repondre('Une erreur est survenue lors de la création du mème.');
-  } finally {
-    // cleanup: try supprimer fichier local s'il existe
-    try { if (filepath) fs.unlinkSync(filepath); } catch (e) {}
+  } catch (error) {
+    console.error('[ECRIRE ERROR]:', error);
+    repondre('Erreur lors de la création du sticker avec texte');
   }
 });
 
-/**
- * Command: photo
- * - Convertir un sticker (non-animé) en image PNG via ffmpeg
- */
+// Commande pour convertir un sticker en image
 zokou({
   nomCom: 'photo',
   categorie: 'Conversion',
-  reaction: '👨🏿‍💻',
-  desc: 'convertir un sticker en image',
-}, async (conn, msg, context) => {
+  reaction: '🖼️',
+  desc: 'Convertir un sticker en image'
+}, async (dest, msg, context) => {
   const { ms: quotedMsg, msgRepondu, repondre } = context;
 
-  if (!msgRepondu) return repondre('Veuillez mentionner le media');
-  if (!msgRepondu.stickerMessage) return repondre('Veuillez mentionner le sticker');
-
   try {
-    const tempSticker = await conn.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
-    const outName = `${Date.now()}.png`;
+    if (!msgRepondu || !msgRepondu.stickerMessage) {
+      return repondre('Répondez à un sticker');
+    }
 
-    // ffmpeg - pour les stickers non-animés, une simple conversion
-    exec(`ffmpeg -i ${tempSticker} ${outName}`, (error, stdout, stderr) => {
-      try { fs.unlinkSync(tempSticker); } catch (e) {}
-      if (error) {
-        conn.sendMessage(msg.key.remoteJid, { text: 'Un sticker non animé svp' }, { quoted: quotedMsg });
-        return;
-      }
-      const imageBuffer = fs.readFileSync(outName);
-      conn.sendMessage(msg.key.remoteJid, { image: imageBuffer }, { quoted: quotedMsg });
-      fs.unlinkSync(outName);
+    const tempInput = path.join(__dirname, 'temp_sticker.webp');
+    const tempOutput = path.join(__dirname, `sticker_${Date.now()}.png`);
+
+    await withTempFile(tempInput, async () => {
+      await withTempFile(tempOutput, async () => {
+        await quotedMsg.downloadAndSaveMediaMessage(msgRepondu.stickerMessage, tempInput);
+        
+        // Conversion avec sharp (plus efficace que exec + ffmpeg)
+        await sharp(tempInput)
+          .toFormat('png')
+          .toFile(tempOutput);
+
+        const imageBuffer = fs.readFileSync(tempOutput);
+        await dest.sendMessage(msg.key.remoteJid, { 
+          image: imageBuffer 
+        }, { quoted: quotedMsg });
+      });
     });
-  } catch (err) {
-    console.error('photo cmd error:', err);
-    repondre('Erreur lors de la conversion du sticker');
+  } catch (error) {
+    console.error('[PHOTO ERROR]:', error);
+    repondre('Erreur lors de la conversion du sticker en image');
   }
 });
 
-/**
- * Command: url
- * - Upload file (image/video/sticker) to Catbox (ou service) et renvoie le lien
- */
+// Commande pour obtenir l'URL d'un média
 zokou({
   nomCom: 'url',
   categorie: 'Conversion',
   reaction: '🔗',
-  desc: 'Upload media et renvoie un lien',
-}, async (conn, msg, context) => {
-  const { msgRepondu, repondre } = context;
-  if (!msgRepondu) return repondre('veiller mentionner le media');
+  desc: 'Obtenir l\'URL d\'un média'
+}, async (dest, msg, context) => {
+  const { ms: quotedMsg, msgRepondu, repondre } = context;
 
   try {
-    // prefer message.message, puis stickerMessage, etc.
-    let target;
-    if (msgRepondu.imageMessage) target = msgRepondu.imageMessage;
-    else if (msgRepondu.videoMessage) target = msgRepondu.videoMessage;
-    else if (msgRepondu.stickerMessage) target = msgRepondu.stickerMessage;
-    else return repondre('Media non supporté');
+    if (!msgRepondu) {
+      return repondre('Répondez à un média');
+    }
 
-    const filePath = await conn.downloadAndSaveMediaMessage(target);
-    const link = await uploadToCatbox(filePath);
-    repondre(link);
-    try { fs.unlinkSync(filePath); } catch (e) {}
-  } catch (err) {
-    console.error('url cmd error:', err);
-    repondre('Erreur lors de la création du lien');
+    const mediaTypes = ['imageMessage', 'videoMessage', 'stickerMessage'];
+    const mediaType = mediaTypes.find(type => msgRepondu[type]);
+
+    if (!mediaType) {
+      return repondre('Type de média non supporté');
+    }
+
+    const tempFile = path.join(__dirname, `temp_${Date.now()}.${mediaType === 'videoMessage' ? 'mp4' : 'webp'}`);
+
+    await withTempFile(tempFile, async () => {
+      await quotedMsg.downloadAndSaveMediaMessage(msgRepondu[mediaType], tempFile);
+      const fileUrl = await uploadToCatbox(tempFile);
+      repondre(`URL du média: ${fileUrl}`);
+    });
+  } catch (error) {
+    console.error('[URL ERROR]:', error);
+    repondre('Erreur lors de la génération du lien');
   }
 });
